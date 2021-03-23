@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    tools:context=".InputDataRegisterActivity">
+
+    <ImageView
+        android:id="@+id/inputData_logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/ic_mobile_login_pana_1" />
+
+    <TextView
+        android:id="@+id/InputData_txt_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="42dp"
+        android:gravity="center_horizontal"
+        android:text="@string/InputData_txt_judul"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        tools:ignore="UnusedAttribute" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/InputData_namalengkap"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/button_gray"
+        android:hint="@string/inputdata_txt_namalengkap"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/InputData_email"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_gray"
+        android:hint="@string/inputdata_txt_email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/InputData_password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_gray"
+        android:hint="@string/inputdata_txt_password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/InputData_btn_actiondaftar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/button"
+        android:text="@string/login_text_daftar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

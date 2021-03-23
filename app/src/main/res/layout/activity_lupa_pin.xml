@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    tools:context=".LupaPinActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/font_poppins"
+        android:gravity="center"
+        android:text="@string/lupa_pin_buat_kode_pin"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/lupa_pin_masukan_6_digit_angka"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/lupa_pin_txt_pin"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lupa_pin_edittext_Pin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_gray"
+        android:inputType="number|phone"
+        android:maxLength="6"
+        android:padding="16dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/lupa_pin_txt_konfirmasi_pin"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lupa_pin_edittext_konfirmasiPin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_gray"
+        android:inputType="number|phone"
+        android:maxLength="6"
+        android:padding="16dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/lupapin_btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button"
+        android:text="@string/lupa_pin_btn_verifikasi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

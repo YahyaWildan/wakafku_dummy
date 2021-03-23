@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    tools:context=".VerifikasiPinActivity">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/passwordisometric" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_masukan_pin"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/verifikasi_pin_1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_indicator_active" />
+
+        <ImageView
+            android:id="@+id/verifikasi_pin_2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_indicator_inactive" />
+
+        <ImageView
+            android:id="@+id/verifikasi_pin_3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_indicator_inactive" />
+
+        <ImageView
+            android:id="@+id/verifikasi_pin_4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_indicator_inactive" />
+
+        <ImageView
+            android:id="@+id/verifikasi_pin_5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_indicator_inactive" />
+
+        <ImageView
+            android:id="@+id/verifikasi_pin_6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_indicator_inactive" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/verifikasi_pin_lupa_pin"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/txt_lupa_pin"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:weightSum="3">
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_1"/>
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_2"/>
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_4"/>
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_5"/>
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_7"/>
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_8"/>
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_9"/>
+    </LinearLayout>
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:clickable="false"
+
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:id="@+id/btnVerifikasiPin_btn_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_0"/>
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:id="@+id/btnVerifikasiPin_btn_backspace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:src="@drawable/ic_backspace"
+             />
+    </LinearLayout>
+
+
+</LinearLayout>

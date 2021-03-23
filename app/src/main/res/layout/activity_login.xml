@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+           android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_logo" />
+
+        <ImageView
+            android:layout_width="228dp"
+            android:layout_height="108dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logotext2" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_nomor_ponsel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/login_logo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_gray"
+        android:hint="@string/login_txt_no_ponsel"
+        android:inputType="number|phone"
+        android:maxLength="14"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/login_btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/login_nomor_ponsel"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button"
+        android:text="@string/login_txt"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/login_or"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/login_btn_action"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:id="@+id/btnLine1"
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1.3"
+            android:background="@drawable/button_line" />
+
+        <TextView
+            android:id="@+id/txtOr"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/textdarkgray"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/btnLine2"
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+
+            android:layout_marginTop="12dp"
+            android:layout_weight="1.3"
+            android:background="@drawable/button_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_btn_facebook_google"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/login_or"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/login_btn_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:drawableStart="@drawable/ic_facebook"
+            android:fontFamily="@font/font_poppins"
+            android:padding="16dp"
+            android:text="@string/txt_facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/login_btn_google"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_gray"
+            android:drawableStart="@drawable/ic_google"
+            android:fontFamily="@font/font_poppins"
+            android:padding="16dp"
+            android:text="@string/txt_google"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn_facebook_google"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/belum_memiliki_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/belum_memiliki_akun" />
+
+        <TextView
+            android:id="@+id/login_txt_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            android:layout_toEndOf="@id/belum_memiliki_akun"
+            android:onClick="Daftar"
+            android:text="@string/login_text_daftar"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+</RelativeLayout>

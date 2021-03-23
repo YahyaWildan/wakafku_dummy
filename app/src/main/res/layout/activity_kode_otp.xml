@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    tools:context=".KodeOtpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/KodeOtp_masukan_kode_otp"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/KodeOtp_txt_kami_telah_mengirimkan_kode_otp_pada_ponsel_anda"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/KodeOtp_nomor_ponsel"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/KodeOtp_nomor_ponsel"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        tools:targetApi="p" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="64dp"
+        android:weightSum="6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/KodeOtp_edtText_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_gray_active"
+                android:hint="4"
+                android:textColor="@color/black"
+                android:inputType="number|phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/KodeOtp_edtText_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_gray"
+                android:textColor="@color/black"
+                android:inputType="number|phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/KodeOtp_edtText_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_gray"
+                android:textColor="@color/black"
+                android:inputType="number|phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/KodeOtp_edtText_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_gray"
+                android:textColor="@color/black"
+                android:inputType="number|phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/KodeOtp_edtText_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_gray"
+                android:textColor="@color/black"
+                android:inputType="number|phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/KodeOtp_edtText_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_gray"
+                android:textColor="@color/black"
+                android:inputType="number|phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/KodeOtp_waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:text="@string/KodeOtp_txt_waktu"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/belum_memiliki_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_mendapat_kode_OTP"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/login_txt_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            android:layout_toEndOf="@id/belum_memiliki_akun"
+            android:text="@string/KodeOtp_text_kirimUlang"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/KodeOtp_kirim"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:text="@string/text_kirim"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:onClick="verifikasiPin"
+        android:text="Verifikasi Pin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:onClick="lupaPin"
+        android:text="Lupa Pin"/>
+</LinearLayout>
+
+
+
